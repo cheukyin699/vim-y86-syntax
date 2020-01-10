@@ -24,7 +24,7 @@ syn match y86InstructionAddr "^0x[0-9a-f]*:" containedin=ALLBUT,y86Comment
 
 syn keyword y86BasicInstructions       halt nop
 syn match y86MoveInstructions          "rrmov\(l\|q\)\|irmov\(l\|q\)\|rmmov\(l\|q\)\|mrmov\(l\|q\)"
-syn match y86OperationInstructions     "add\(l\|q\)\|sub\(l\|q\)\|and\(l\|q\)\|xor\(l\|q\)"
+syn match y86OperationInstructions     "add\(l\|q\)\|sub\(l\|q\)\|mulq\|divq\|modq\|and\(l\|q\)\|xor\(l\|q\)"
 syn keyword y86OperationInstructions   iaddq
 syn keyword y86BranchInstructions      jmp jle jl je jne jge jg
 syn keyword y86TransferInstructions    cmovle cmovl cmove cmovne cmovge cmovg
